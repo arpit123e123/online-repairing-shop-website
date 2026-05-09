@@ -3,7 +3,7 @@ import axios from 'axios';
 import './App.css';
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
+  baseURL: import.meta.env.VITE_API_URL || 'https://online-repairing-shop-website.onrender.com/api',
 });
 
 const emptyForm = {

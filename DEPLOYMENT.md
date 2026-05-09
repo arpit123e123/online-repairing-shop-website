@@ -8,6 +8,7 @@ Set these environment variables on your backend host:
 MONGO_URI=mongodb+srv://USER:PASSWORD@CLUSTER.mongodb.net/online-shop
 AUTH_SECRET=use-a-long-random-secret
 PORT=5000
+CORS_ORIGIN=https://your-frontend-domain.com
 SELLER_EMAIL=owner@example.com
 SELLER_PHONE=+919999999999
 DEFAULT_COUNTRY_CODE=+91
