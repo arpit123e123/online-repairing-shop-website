@@ -1,0 +1,11 @@
+◇ injected env (13) from backend\.env // tip: ◈ secrets for agents [www.dotenvx.com]
+MongoDB connected
+Server running on port 5000
+Order notification result: {
+  email: { skipped: true, reason: 'SMTP settings missing' },
+  sms: { sent: 0, failed: 0, skipped: 1 }
+}
+Order notification result: {
+  email: { skipped: true, reason: 'SMTP settings missing' },
+  sms: { sent: 0, failed: 0, skipped: 1 }
+}
