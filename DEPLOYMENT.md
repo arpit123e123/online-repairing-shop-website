@@ -8,7 +8,6 @@ Set these environment variables on your backend host:
 MONGO_URI=mongodb+srv://USER:PASSWORD@CLUSTER.mongodb.net/online-shop
 AUTH_SECRET=use-a-long-random-secret
 PORT=5000
-CORS_ORIGIN=https://your-frontend-domain.com
 SELLER_EMAIL=owner@example.com
 SELLER_PHONE=+919999999999
 DEFAULT_COUNTRY_CODE=+91
@@ -34,8 +33,10 @@ npm run server
 Set this environment variable on your frontend host:
 
 ```env
-VITE_API_URL=https://your-backend-domain.com/api
+VITE_API_URL=https://online-repairing-shop-website.onrender.com/api
 ```
+
+If you set only `https://online-repairing-shop-website.onrender.com`, the app will add `/api` automatically.
 
 Build command:
 

@@ -2,8 +2,14 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import axios from 'axios';
 import './App.css';
 
+const getApiBaseURL = () => {
+  const fallbackURL = 'https://online-repairing-shop-website.onrender.com';
+  const rawURL = (import.meta.env.VITE_API_URL || fallbackURL).trim().replace(/\/+$/, '');
+  return rawURL.endsWith('/api') ? rawURL : `${rawURL}/api`;
+};
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'https://online-repairing-shop-website.onrender.com/api',
+  baseURL: getApiBaseURL(),
 });
 
 const emptyForm = {
